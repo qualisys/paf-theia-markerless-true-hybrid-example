@@ -1,0 +1,11 @@
+STATE::RUN
+DIR::C:\Users\user\Desktop\QTM Projects\Baseball\Data\Jim Doe\Baseball Markerless Right-handed\TheiaFormatData
+WORKSPACE::FALSE
+RUNANALYSIS::TRUE
+SAVEINFERENCE::FALSE
+SAVEVIDEO::FALSE
+SAVEPOSE::TRUE
+SAVEWORK::FALSE
+SAVEFBX::FALSE
+FBXCOORDSYS::THEIA3D
+PREF_PATH::C:\Users\user\Desktop\QTM Projects\Baseball\Templates\Scripts\src\Theia\theia_preferences.pxt
