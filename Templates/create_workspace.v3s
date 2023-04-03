@@ -33,25 +33,26 @@ Manage_Theia3D_Merge
 <?
 foreach($measurements as $m) {
 	if($m["Used"] === "True") {
+		$path_parts = pathinfo($m["Filename"]);
+		$filename = $path_parts['filename'];
 ?> 
 		Assign_Tags_To_Files
-		/MOTION_FILE_NAMES=*Dynamic*.c3d
+		/MOTION_FILE_NAMES=<?echo $working_directory .'TheiaFormatData\\' .$filename . '\\'.$filename;?>.c3d
 		! /QUERY=
 		/TAGS=<?=$m["Measurement_type"];?> 
 		;
 
 		Assign_Tags_To_Files
-		/MOTION_FILE_NAMES=*Dynamic*.c3d
+		/MOTION_FILE_NAMES=<?echo $working_directory .'TheiaFormatData\\' .$filename . '\\'.$filename;?>.c3d
 		! /QUERY=
 		/TAGS=<?=$session['Test_condition'];?> 
 		;
 
 		Assign_Tags_To_Files
-		/MOTION_FILE_NAMES=*Dynamic*.c3d
+		/MOTION_FILE_NAMES=<?echo $working_directory .'TheiaFormatData\\' .$filename . '\\'.$filename;?>.c3d
 		! /QUERY=
 		/TAGS=<?=$m['Comments'];?> 
 		;
-
 <?
 	}
 }?> 

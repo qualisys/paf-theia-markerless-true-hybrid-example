@@ -59,7 +59,7 @@ Analyses:
     Program display name: Visual 3d
     Export session: Yes
     Export measurements: c3d
-    Arguments: [/s, $WorkingDirectory$hybrid.v3s]
+    Arguments: [/s, $WorkingDirectory$create_workspace.v3s]
     Template files: ['*.v3s']
     Do not wait for Application: Yes
   Internal Run Theia:
