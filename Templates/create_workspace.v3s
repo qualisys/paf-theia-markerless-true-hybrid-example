@@ -71,3 +71,7 @@ Call_Script
 ! /SCRIPT_PATH=
 ;
 
+!Save cmz
+File_Save_As
+/FILE_NAME=<?=$working_directory . 'Report.cmz'; ?> 
+;
