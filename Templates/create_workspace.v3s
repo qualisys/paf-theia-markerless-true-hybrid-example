@@ -37,19 +37,19 @@ foreach($measurements as $m) {
 		$filename = $path_parts['filename'];
 ?> 
 		Assign_Tags_To_Files
-		/MOTION_FILE_NAMES=<?echo $working_directory .'TheiaFormatData\\' .$filename . '\\'.$filename;?>.c3d
+		/MOTION_FILE_NAMES=<?echo $working_directory . $filename;?>.c3d
 		! /QUERY=
 		/TAGS=<?=$m["Measurement_type"];?> 
 		;
 
 		Assign_Tags_To_Files
-		/MOTION_FILE_NAMES=<?echo $working_directory .'TheiaFormatData\\' .$filename . '\\'.$filename;?>.c3d
+		/MOTION_FILE_NAMES=<?echo $working_directory . $filename;?>.c3d
 		! /QUERY=
 		/TAGS=<?=$session['Test_condition'];?> 
 		;
 
 		Assign_Tags_To_Files
-		/MOTION_FILE_NAMES=<?echo $working_directory .'TheiaFormatData\\' .$filename . '\\'.$filename;?>.c3d
+		/MOTION_FILE_NAMES=<?echo $working_directory . $filename;?>.c3d
 		! /QUERY=
 		/TAGS=<?=$m['Comments'];?> 
 		;
