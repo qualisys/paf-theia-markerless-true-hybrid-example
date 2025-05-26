@@ -36,7 +36,6 @@ There are two ways how to set up the project for QTM:
     - Theia can identify and process data for more then one subject if more persons are in the volume. The subject that yields best data is typically selected but sometimes other person is wrongly chosen. If that happens, there is an option to choose which c3d file is actual subject. To select other c3d, activate the measurement, navigate to `Theia c3d file` field and chose number of Theia file. To find out what c3d files Theia has created, go to working directory of active session, open `TheiaFormatData` folder, open folder of active measurement and review `pose_filt_*.c3d` files in Visual3D.
 
 > Note that all data (videos, markers, forces, other analog) must be captured at capture rates that are integer multiple of each other, so that no resampling is required. Failing this requirement would lead to the data being out of sync.
-
 ## Resources for using the Qualisys Project Automation Framework (PAF)
 
 The purpose of the ***Project Automation Framework*** (PAF) is to streamline the motion capture process from data collection to the final report. This repository contains an example project that illustrate how PAF can be used to implement custom automated data collection in [Qualisys Track Manager (QTM)](http://www.qualisys.com/software/qualisys-track-manager/), and how QTM can be connected to a processing engine. 
@@ -49,7 +48,9 @@ The full documentation for PAF development is available here: [PAF Documentation
 ### PAF Examples
 
 Our official examples for various processing engines:
+
 - [AnyBody](https://github.com/qualisys/paf-anybody-example)
+- [Cleanse](https://github.com/qualisys/paf-cleanse-example)
 - [ENABLE](https://github.com/qualisys/paf-enable-markerless-example)
 - [Excel](https://github.com/qualisys/paf-excel-example)
 - [Matlab](https://github.com/qualisys/paf-matlab-example)
@@ -61,3 +62,4 @@ Our official examples for various processing engines:
 - [Visual3D](https://github.com/qualisys/paf-visual3d-example)
 
 _As of QTM version 2.17, the official Qualisys PAF examples can be used without any additional license. Note that some more advanced analysis types require a license for the "PAF Framework Developer kit" (Article number 150300)._
+
