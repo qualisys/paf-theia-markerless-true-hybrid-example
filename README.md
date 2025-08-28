@@ -12,12 +12,12 @@ To download the latest version of the example project to your computer, you can 
 There are two ways how to set up the project for QTM:
 1. If you are going to use this example in a single project:
     1. Unzip the zip file with source code na copy its content into a QTM project
-    2. Download Theia-Tools.exe from the corresponding [release](https://github.com/qualisys/paf-theia-markerless-example/releases/latest) and move the extracted content into the `Templates/Assets/Programs/Theia-Tools/` folder of the project.
+    2. Download Theia-Tools.exe from the corresponding [release](https://github.com/qualisys/paf-theia-markerless-true-hybrid-example/releases/latest) and move the extracted content into the `Templates/Assets/Programs/Theia-Tools/` folder of the project.
 2. If you plan to create multiple projects based on this example, follow these steps to make the example available in the New Project dialog in QTM:
     1. Unzip the zip file with source code to `C:\Program Files\Qualisys\Qualisys Track Manager\Packages
     2. Name the folder `Theia Markerless True Hybrid Example`
     3. Delete Settings.qtmproj. This makes the example available in QTM. Then for to QTM > File > New Project and create new project based on Theia Markerless Example.
-    4. Download Theia-Tools.exe from the corresponding [release](https://github.com/qualisys/paf-theia-markerless-example/releases/latest) and move the extracted content into folder `C:\Program Files\Qualisys\Qualisys Track Manager\Packages\Theia Markerless True Hybrid Example\Templates\Assets\Programs\Theia-Tools\`.
+    4. Download Theia-Tools.exe from the corresponding [release](https://github.com/qualisys/paf-theia-markerless-true-hybrid-example/releases/latest) and move the extracted content into folder `C:\Program Files\Qualisys\Qualisys Track Manager\Packages\Theia Markerless True Hybrid Example\Templates\Assets\Programs\Theia-Tools\`.
 
 ## Preparing Qualisys data for Theia3D processing
 
@@ -27,7 +27,7 @@ There are two ways how to set up the project for QTM:
 4. Set Project Options > Miscellaneous > Folder Options for "Visual3D" to ```C:\Program Files\Visual3D x64\Visual3D.exe``` (adapt if Visual3D is installed at different location).
 5. Download data from Qualisys File Library (https://qfl.qualisys.com/#!/project/theiaexample).
    Example data includes three types of data:
-   1. **John Doe** can be used with basic example https://github.com/qualisys/paf-theia-markerless-comparison-example.
+   1. **John Doe** can be used with basic example https://github.com/qualisys/paf-theia-markerless-example.
    2. **Jim Doe** is intended for markerless vs markerbased comparison example: https://github.com/qualisys/paf-theia-markerless-comparison-example. It does not include videos and can be used to compare marker-based and markerless data and is intended to be used this this repository. This sesson type expects data to be captured by combined system of video cameras and marker-based cameras where markers are places on the body for the same trial that is used to capture videos. Script is set to work with sports marker set. If other marker set is required, it is necessary to adapt the script and model files accordingly. 
    3. **Joe Doe** is intended for this example. It does not include videos and can be used as an example for this repository how to add objects to markeless analysis. Objects must have markers on. It is important that both marker cameras and video camera capture at the same rate.
 6. Extract downloaded .zip file into the `Data` folder of the project.
